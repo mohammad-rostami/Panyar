@@ -1,4 +1,4 @@
-# SooR
+# Panyar
 
 panyar is an insurance app that helps you Insure your home, shop and ... Against flood, Earthquake, fire, storm and... 
 also you could get list of insurance prices and informations.
