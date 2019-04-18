@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    useLibrary 'org.apache.http.legacy'
+    android.defaultConfig.vectorDrawables.useSupportLibrary = true
+
+    defaultConfig {
+        applicationId "ir.panyar.carin"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 7
+        versionName "1.2.2"
+        multiDexEnabled true
+        manifestPlaceholders = [onesignal_app_id               : "e748da0f-4a92-49aa-8d45-b582475faf03",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+    compile 'com.android.support:support-v4:26.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.android.volley:volley:1.0.0'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.heinrichreimersoftware:material-intro:1.6'
+
+    compile 'com.github.eschao:android-ElasticListView:v1.0'
+
+    //okhttp stack
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    //firebase-crash
+    compile 'com.google.firebase:firebase-crash:12.0.1'
+    //firebase analytic
+    compile 'com.google.firebase:firebase-core:12.0.1'
+
+    //font
+    compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+
+    //pushe
+    compile 'com.onesignal:OneSignal:[3.5.8, 3.99.99]'
+    compile 'com.android.support:customtabs:26.0.0'
+    compile 'com.layer-net:step-indicator:1.1.0'
+    compile 'com.google.android.gms:play-services:12.0.1'
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0'
+            }
+        }
+    }
+}
+apply plugin: 'com.google.gms.google-services'

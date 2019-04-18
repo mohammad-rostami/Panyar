@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "655432930807",
+    "firebase_url": "https://panyar-47dd3.firebaseio.com",
+    "project_id": "panyar-47dd3",
+    "storage_bucket": "panyar-47dd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655432930807:android:9070c9a87cbdbbb7",
+        "android_client_info": {
+          "package_name": "ir.panyar.carin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655432930807-7bnif6b7o6m8qe7fm27e3futim4f27pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.panyar.carin",
+            "certificate_hash": "48ce51b387be02366bef23c50e8cae51203caa68"
+          }
+        },
+        {
+          "client_id": "655432930807-3udct7mrik440e90qvnoroal8rvjkoq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl4eOtYEWisEEnoT1WQD3aQzQRPlT9aRc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655432930807-3udct7mrik440e90qvnoroal8rvjkoq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

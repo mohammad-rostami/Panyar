@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.heinrichreimersoftware:material-intro-1.6">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/7f4c48ee0944521128e62eb113622be0676139a8/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/7f4c48ee0944521128e62eb113622be0676139a8/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7f4c48ee0944521128e62eb113622be0676139a8/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

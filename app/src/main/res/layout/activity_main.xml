@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <in.public_static.carin.paniar.utils.NonScrollableViewPager
+                android:id="@+id/vp_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/imgWaitingList"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icSupport"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_support"
+                    android:text="btn"
+                    android:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/txtSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="کارشناس"
+                    android:textColor="#212121"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgReciept"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icInsurance"
+                    android:layout_width="35dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_armor"
+                    android:text="btn"
+                    android:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/txtInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="بیمه نامه"
+                    android:textColor="#212121"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgOrder"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icMain"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_main"
+                    android:text="btn"
+                    android:tint="@color/pink" />
+
+                <TextView
+                    android:id="@+id/txtMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="سفارش"
+                    android:textColor="#212121"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgApprovedList"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icList"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_list"
+                    android:text="btn"
+                    android:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/txtList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="پیش نویس"
+                    android:textColor="#212121"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgProfile"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icProfile"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_profile"
+                    android:text="btn"
+                    android:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="پروفایل"
+                    android:textColor="#212121"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

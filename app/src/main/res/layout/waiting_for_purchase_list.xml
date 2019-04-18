@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="75dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llBacLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/background_white_with_shadow"
+        android:elevation="1dp"
+        android:minHeight="75dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/txtItemPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:textColor="#6a6a6a"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="بیمه منزل مسکونی"
+                android:textColor="#6a6a6a"
+                android:textStyle="normal|bold" />
+
+            <ImageView
+                android:id="@+id/imgItemLogo"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_bime_alborz"
+                android:tint="@color/cyanide" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPostalCode_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="کد پستی"
+                android:textColor="#6c6c6c" />
+
+            <TextView
+                android:id="@+id/txtDate_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="تاریخ"
+                android:textColor="#6c6c6c" />
+
+            <TextView
+                android:id="@+id/txtFactorNo_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="شماره رسید"
+                android:textColor="#6c6c6c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtItemPostalCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="..........."
+                android:textColor="#6c6c6c" />
+
+            <TextView
+                android:id="@+id/txtDateDsc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text=".../.../..."
+                android:textColor="#6c6c6c" />
+
+            <TextView
+                android:id="@+id/txtFactorNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text=".........."
+                android:textColor="#6c6c6c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left">
+
+                <TextView
+                    android:id="@+id/btnPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/indicator_back_left"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:text="تکمیل سفارش و پرداخت"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBimeEnabledList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="0.3"
+                    android:alpha="0.9"
+                    android:background="@drawable/indicator_back_cyanide"
+                    android:gravity="right|center_vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:text="آتش سوزی و ساعقه تایید شد"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtBimewaitingList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="0.3"
+                    android:alpha="0.9"
+                    android:background="@drawable/indicator_back_pink"
+                    android:gravity="right|center_vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:text="سیل در انتظار تایید کارشناس"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtDsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:alpha="0.9"
+                    android:background="@drawable/indicator_back_yellow"
+                    android:gravity="right|center_vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:text="پوشش اضافه سیل در انتظار پرداخت"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

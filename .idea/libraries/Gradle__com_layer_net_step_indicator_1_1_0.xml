@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.layer-net:step-indicator-1.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/59ca00303cea20ab76ff4e1fecd8c0c32aab2027/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/59ca00303cea20ab76ff4e1fecd8c0c32aab2027/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.layer-net/step-indicator/1.1.0/c4fb09ab11d4c88d328dad5b4513b8785de10439/step-indicator-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

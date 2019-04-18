@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/activity_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5a595757"
+        android:padding="20dp"
+        android:gravity="center"
+        tools:context="in.public_static.carin.paniar.activity.ActivityPay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#888888"
+            android:gravity="right|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llUrl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bank_url"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

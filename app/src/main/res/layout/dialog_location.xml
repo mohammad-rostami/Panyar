@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/dialog_location_txt_topic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical|right"
+        android:text="انتخاب بر اساس"
+        android:textColor="#212121"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_location_ll_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right">
+
+        <TextView
+            android:id="@+id/dialog_location_txt_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="موقعیت فعلی"
+            android:textColor="#757575"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/gps" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_location_ll_marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right">
+
+        <TextView
+            android:id="@+id/dialog_location_txt_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="موقعیت انتخابی"
+            android:textColor="#757575"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/dialog_location_img_marker"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/pin" />
+    </LinearLayout>
+
+
+</LinearLayout>
